@@ -1,11 +1,82 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
-<title>CherryPy - A Python Web Framework</title>
-</head>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="CherryPy - A Minimalist Python Web Framework" />
+    <meta name="keywords" content="web framework,python" />
+    <link rel="icon" href="/images/cpicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/images/cpicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/prettify.css" type="text/css" />
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+    <script type="text/javascript" src="/js/prettify.js"></script>
+    <title>CherryPy - A Minimalist Python Web Framework</title>
+  </head>
+  <body onload="prettyPrint();">
+<div id="head-container">
+	<div id="header">
+		<h1>
+			CherryPy
+		</h1>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="http://download.cherrypy.org/cherrypy/">Download</a></li>
+			<li><a href="http://docs.cherrypy.org">Documentation</a></li>
+			<li><a href="community.html">Community</a></li>
+			<li><a href="https://bitbucket.org/cherrypy/cherrypy/overview">Development</a></li>
+		</ul>
+	</div>
+</div>
+<div id="content-container">
+	<div id="content-container2">
+		<div id="content-container3">
+			<div id="content">
+				<h1>
+					Welcome to CherryPy!
+				</h1>
+				<p id="whatisitshort">CherryPy is a pythonic, object-oriented HTTP framework.</p>
 
-<body>
-<h1>CherryPy</h1>
-</body>
+<p>CherryPy allows developers to build web applications in much the same way they would build any other object-oriented Python program. This results in smaller source code developed in less time.</p>
+
+<p>CherryPy is now more than six years old and it is has proven very fast and stable. It is being used in production by many sites, from the simplest ones to the most demanding ones.</p>
+
+<h2>"Hello World" with CherryPy:</h2>
+			  <pre class="prettyprint" id="python">
+import cherrypy
+
+class HelloWorld(object):
+    def index(self):
+        return "Hello World!"
+    index.exposed = True
+
+cherrypy.quickstart(HelloWorld())
+			  </pre>
+			</div>
+			<div id="aside">
+			  <h3>2011-10-18 CherryPy 3.2.2 released</h3>
+
+<p>This version fixes a type bug in WSGI response headers, among several others. Upgrade to be PEP-3333 compliant.</p>
+
+<h3>2010-08-23 Running CherryPy on Android</h3>
+
+<p>See how you can run CherryPy <a href="http://www.defuze.org/archives/228-running-cherrypy-on-android-with-sl4a.html">on the Android platform</a> to serve your web application from your mobile phone.</p>
+
+<h3>2007-09-05 CP3 on Jython</h3>
+
+<p>H. Eriksson has a "Hello, World!" of <a href="http://henkenotes.blogspot.com/2007/09/cherrypy-3-jython-third-attempt.html">CherryPy 3 working on the Jython trunk</a>! Hacks were needed for the _AttributeDocstrings metaclass, a dummy signal module for Jython, and a couple extra attributes to the socket module, but overall it seems doable. If anyone would like to provide patches to CP so it works on Jython out of the box, feel free!
+
+		</div>
+		</div>
+	</div>
+	<div id="footer-container">
+		<div id="footer">
+		  <p>&copy; 2001-2011 The CherryPy team.</p>
+		  <p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Licence Creative Commons" style="border-width:0" src="/images/ccbylic.png" /></a></p>
+		</div>
+	</div>
+</div>
+  </body>
 </html>
