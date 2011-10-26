@@ -3,7 +3,7 @@ body {
        padding:0;
        color: white;
        font-size: 62.5%;
-       font-family: Helvetica, Arial, sans-serif;
+       font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 }
 
 a {  color: #B00; text-decoration: none; }
@@ -94,6 +94,8 @@ a:hover { color: #cab823; }
 	padding: 20px 0;
 	margin: 0 0 0 30px;
 	display: inline;
+        letter-spacing: 0.8px;
+        line-height: 130%
 }
 
 #content h2 { margin: 0; }
@@ -135,4 +137,5 @@ a:hover { color: #cab823; }
 
 pre.prettyprint{padding:2px;border: none;}
 
+.clearlist { list-style-type: none; margin-left: 0; padding-left: 0; }
 #whatisitshort { color: #910000; font-size: 14px; font-weight:bold; }
