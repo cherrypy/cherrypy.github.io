@@ -22,10 +22,9 @@
 <div id="navigation-container">
 	<div id="navigation">
 		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="http://download.cherrypy.org/cherrypy/">Download</a></li>
+			<li><a href="http://download.cherrypy.org/cherrypy/3.2.2/">Download</a></li>
 			<li><a href="http://docs.cherrypy.org">Documentation</a></li>
-			<li><a href="community.html">Community</a></li>
+			<li><a href="https://bitbucket.org/cherrypy/cherrypy/wiki/Home">Community</a></li>
 			<li><a href="https://bitbucket.org/cherrypy/cherrypy/overview">Development</a></li>
 		</ul>
 	</div>
@@ -34,16 +33,13 @@
 	<div id="content-container2">
 		<div id="content-container3">
 			<div id="content">
-				<h1>
-					Welcome to CherryPy!
-				</h1>
-				<p id="whatisitshort">CherryPy is a pythonic, object-oriented HTTP framework.</p>
+				<p id="whatisitshort">CherryPy is a pythonic, object-oriented web framework.</p>
 
 <p>CherryPy allows developers to build web applications in much the same way they would build any other object-oriented Python program. This results in smaller source code developed in less time.</p>
 
-<p>CherryPy is now more than six years old and it is has proven very fast and stable. It is being used in production by many sites, from the simplest ones to the most demanding ones.</p>
+<p>CherryPy is now more than seven years old and it is has proven very fast and stable. It is being used in production by many sites, from the simplest ones to the most demanding ones.</p>
 
-<h2>"Hello World" with CherryPy:</h2>
+<h2>CherryPy is as easy as...</h2>
 			  <pre class="prettyprint" id="python">
 import cherrypy
 
@@ -54,6 +50,27 @@ class HelloWorld(object):
 
 cherrypy.quickstart(HelloWorld())
 			  </pre>
+<h2>Features</h2>
+			  <ul>
+			    <li>A fast, <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec1.html#sec1.2">HTTP/1.1-compliant</a>, <a href="http://www.wsgi.org/en/latest/index.html">WSGI</a> thread-pooled webserver.</li>
+<li>Easy to run multiple HTTP servers (e.g. on multiple ports) at once.</li>
+<li>A powerful configuration system for developers and deployers alike.</li>
+<li>A flexible plugin system.</li>
+<li>Built-in tools for caching, encoding, sessions, authorization, static content, and many more.</li>
+<li>Swappable and customizable...everything.</li>
+<li>Built-in profiling, coverage, and testing support.</li>
+<li>Runs on Python 2.5+, 3.1+, Jython and <a href="http://www.defuze.org/archives/228-running-cherrypy-on-android-with-sl4a.html">Android</a>.</li>
+</ul>
+<h2>License</h2>
+<p>CherryPy is distributed under a <a href="https://bitbucket.org/cherrypy/cherrypy/src/697c7af588b8/cherrypy/LICENSE.txt">BSD license</a>.</p>
+<h2>Contribute</h2>
+<p>CherryPy is an open-source project, thus, welcoming contributions. If you are interested you may:</p>
+<ul>
+  <li>Join us on the IRC #cherrypy channel on the OFTC network.</li>
+  <li>Subscribe to the CherryPy <a href="http://groups.google.com/group/cherrypy-users">users mailing-list</a>.</li>
+  <li><a href="https://bitbucket.org/cherrypy/cherrypy/fork">Fork</a> CherryPy on BitBucket and submit pull-request with your modifications.</li>
+</ul>
+
 			</div>
 			<div id="aside">
 			  <h3>2011-10-18 CherryPy 3.2.2 released</h3>
@@ -64,17 +81,12 @@ cherrypy.quickstart(HelloWorld())
 
 <p>See how you can run CherryPy <a href="http://www.defuze.org/archives/228-running-cherrypy-on-android-with-sl4a.html">on the Android platform</a> to serve your web application from your mobile phone.</p>
 
-<h3>2007-09-05 CP3 on Jython</h3>
-
-<p>H. Eriksson has a "Hello, World!" of <a href="http://henkenotes.blogspot.com/2007/09/cherrypy-3-jython-third-attempt.html">CherryPy 3 working on the Jython trunk</a>! Hacks were needed for the _AttributeDocstrings metaclass, a dummy signal module for Jython, and a couple extra attributes to the socket module, but overall it seems doable. If anyone would like to provide patches to CP so it works on Jython out of the box, feel free!
-
 		</div>
 		</div>
 	</div>
 	<div id="footer-container">
 		<div id="footer">
-		  <p>&copy; 2001-2011 The CherryPy team.</p>
-		  <p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Licence Creative Commons" style="border-width:0" src="/images/ccbylic.png" /></a></p>
+		  <p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Licence Creative Commons" style="border-width:0" src="/images/ccbylic.png" /></a></p><p>&copy; 2001-2011 The CherryPy team.</p>
 		</div>
 	</div>
 </div>

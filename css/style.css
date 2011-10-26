@@ -6,6 +6,10 @@ body {
        font-family: Helvetica, Arial, sans-serif;
 }
 
+a {  color: #B00; text-decoration: none; }
+
+a:hover { color: #cab823; }
+
 #head-container
 {
 	color: #FFF;
@@ -131,4 +135,4 @@ body {
 
 pre.prettyprint{padding:2px;border: none;}
 
-#whatisitshort { color: #910000; font-size: 14px; }
+#whatisitshort { color: #910000; font-size: 14px; font-weight:bold; }
