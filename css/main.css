@@ -1,0 +1,211 @@
+/* CSS reset by Eric Meyer
+////////////////////////// */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Helpers
+////////// */
+.clear:before,
+.clear:after { 
+  content: "\0020"; 
+  display: block; 
+  height: 0; 
+  visibility: hidden; 
+} 
+.clear:after { 
+  clear: both;
+}
+.clear { 
+  zoom: 1;
+}
+.hide {
+  position: absolute;
+  top: -999em;
+  left: -999em;
+}
+.img {
+  display: block;
+  text-indent: -999em; 
+  overflow: hidden; 
+  background: no-repeat;
+}
+.fix-o {
+  overflow: auto;
+}
+
+/* Project CSS
+////////////// */
+body {
+  width: 850px;
+  margin: 30px auto 0;
+  font: 16px/1.5 'Fjord One', sans-serif;
+  color: #444;
+  background: #eee url('../images/body.png') center top;
+}
+a {
+  color: #bf0000;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  position: relative;
+  top: 1px;
+}
+h1, h2, h3, h4 {
+  margin-bottom: 5px;
+  color: #000;
+}
+h1, h2, h3, h4, nav.site {
+  font-size: 14px;
+  font-family: 'Convergence', sans-serif;
+  text-transform: uppercase;
+}
+h1.site, h2.site {
+  margin-bottom: 0;
+  text-transform: none;
+}
+pre {
+  padding: 15px 20px;
+  font-family: monaco, monospace;
+  background: #fff;
+  border: 2px solid #ddd;
+}
+p, pre {
+  margin-bottom: 10px;
+}
+mark {
+  color: #666;
+  background: #ddd;
+}
+.half {
+  -moz-column-count: 2;
+  -moz-column-gap: 30px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 30px;
+  column-count: 2;
+  column-gap: 30px;
+}
+header.site {
+  position: relative;
+  margin: 110px 0 30px;
+}
+nav.site {
+  position: absolute;
+  top: -45px;
+  right: 0;
+}
+nav.site li {
+  float: left;
+}
+nav.site a {
+  display: block;
+  height: 25px;
+  line-height: 26px;
+  margin-left: 10px;
+  padding: 0 10px;
+}
+nav.site li:last-child a {
+  padding-right: 0;
+}
+a.button {
+  color: #fff;
+  background-color: #c62020;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c62020), to(#ae0000));
+  background-image: -webkit-linear-gradient(top, #c62020, #ae0000);
+  background-image: -moz-linear-gradient(top, #c62020, #ae0000);
+  background-image: -ms-linear-gradient(top, #c62020, #ae0000);
+  background-image: linear-gradient(top, #c62020, #ae0000);
+}
+a.button:hover {
+  text-decoration: none;
+}
+a.button:active {
+  background-color: #ae0000;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ae0000), to(#c62020));
+  background-image: -webkit-linear-gradient(top, #ae0000, #c62020);
+  background-image: -moz-linear-gradient(top, #ae0000, #c62020);
+  background-image: -ms-linear-gradient(top, #ae0000, #c62020);
+  background-image: linear-gradient(top, #ae0000, #c62020);
+}
+footer.site {
+  padding: 15px 0 20px;
+  font-size: 14px;
+  color: #999;
+}
+footer.site a {
+  color: #666;
+  border-bottom: 1px solid #ccc;
+}
+footer.site a:hover {
+  text-decoration: none;
+  border-color: #666;
+}
+footer.site p {
+  margin-left: 160px;
+}
+img.site {
+  float: left;
+  margin: 15px 30px 0 0;
+}
+h1.site {
+  font-size: 72px;
+  line-height: 1.25;
+}
+h2.site {
+  font-size: 24px;
+  color: #666;
+}
+section.site {
+  margin-bottom: 30px;
+}
+
+.feature-list li {
+  margin-top: 5px;
+  padding-top: 5px; }
+.feature-list li, footer.site {
+  border-top: 2px solid #ddd;
+}
+
+.pln{color:#000}.str{color:#d34d30}.kwd{color:#2068c1}.com{color:#800}.typ{color:#800000}.lit{color:#066}.pun,.opn,.clo{color:#999}.tag{color:#008}.atn{color:#606}.atv{color:#080}.dec,.var{color:#606}.fun{color:red}
