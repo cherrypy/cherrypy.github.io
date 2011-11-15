@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CherryPy — A Minimalist Python Web Framework</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Convergence" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Fjord+One" />
+  </head>
+  <body>
+    <img width="128" src="images/cherrypy.png" alt="" class="site" />
+    <div class="fix-o">
+      <header class="site clear">
+        <hgroup class="fix-o">
+          <h1 class="site">CherryPy</h1>
+          <h2 class="site">A Minimalist Python Web Framework</h2>
+        </hgroup>
+        <nav class="site">
+          <ul>
+            <li><a class="button" href="http://download.cherrypy.org/cherrypy/3.2.2/">Download</a></li>
+            <li><a href="http://docs.cherrypy.org/stable/index.html">Documentation</a></li>
+            <li><a href="https://bitbucket.org/cherrypy/cherrypy/wiki/Home">Community</a></li>
+            <li><a href="https://bitbucket.org/cherrypy/cherrypy/overview">Development</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+<section class="site">
+  <header>
+    <h1>CherryPy is as easy as…</h1>
+  </header>
+  
+<pre class="prettyprint" id="python"><span class="kwd">import</span><span class="pln"> cherrypy
+</span><span class="kwd">class</span><span class="pln"> </span><span class="typ">HelloWorld</span><span class="pun">(</span><span class="kwd">object</span><span class="pun">):</span><span class="pln">
+    </span><span class="kwd">def</span><span class="pln"> index</span><span class="pun">(</span><span class="kwd">self</span><span class="pun">):</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="str">"Hello World!"</span><span class="pln">
+    index</span><span class="pun">.</span><span class="pln">exposed </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">True</span><span class="pln">
+
+cherrypy</span><span class="pun">.</span><span class="pln">quickstart</span><span class="pun">(</span><span class="typ">HelloWorld</span><span class="pun">())</span><span class="pln"></span></pre>
+
+</section>
+<section class="site">
+  <header>
+    <h1>CherryPy is a pythonic, object-oriented web framework</h1>
+  </header>
+  <div class="half">
+    <p>CherryPy allows developers to build web applications in much the same way they would build any other object-oriented Python program. This results in smaller source code developed in less time.</p>
+    <p>CherryPy is now more than seven years old and it is has proven very fast and stable. It is being used in production by many sites, from the simplest ones to the most demanding ones.</p>
+  </div>
+</section>
+<section class="site">
+  <header>
+    <h1>Features</h1>
+  </header>
+  <ul class="half feature-list">
+    <li>A fast, <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec1.html#sec1.2" target="_blank">HTTP/1.1-compliant</a>, <a href="http://www.wsgi.org/en/latest/index.html" target="_blank">WSGI</a> thread-pooled webserver.</li>
+    <li>Easy to run multiple HTTP servers (e.g. on multiple ports) at once.</li>
+    <li>A powerful configuration system for developers and deployers alike.</li>
+    <li>A flexible plugin system.</li>
+    <li>Built-in tools for caching, encoding, sessions, authorization, static content, and many more.</li>
+    <li>Swappable and customizable...everything.</li>
+    <li>Built-in profiling, coverage, and testing support.</li>
+    <li>Runs on Python 2.5+, 3.1+, Jython and <a href="http://www.defuze.org/archives/228-running-cherrypy-on-android-with-sl4a.html" target="_blank">Android</a>.</li>
+  </ul>
+</section>
+<section class="site">
+  <header>
+    <h1>Contribute</h1>
+  </header>
+  <p>CherryPy is an open-source project, thus, welcoming contributions. <br/>If you are interested you may:
+  <ul class="feature-list">
+    <li>Fork CherryPy on BitBucket <a href="https://bitbucket.org/cherrypy/cherrypy/fork" target="_blank">here</a> and submit pull-request with your modifications.</li>
+    <li>Join us on the IRC <mark>#cherrypy</mark> channel on the <a href="http://www.oftc.net/oftc/" target="_blank">OFTC network</a>.</li>
+    <li>Subscribe to the CherryPy <a href="http://groups.google.com/group/cherrypy-users" target="_blank">users mailing list</a>.</li>
+  </ul>
+</p>
+</section>
+<section class="site">
+  <header>
+    <h1>License</h1>
+  </header>
+  <p>CherryPy is distributed under a <a href="https://bitbucket.org/cherrypy/cherrypy/src/697c7af588b8/cherrypy/LICENSE.txt" target="_blank">BSD license</a>.</p>
+</section>
+
+    </div>
+    <footer class="site">
+      <p>© 2001-2011 The CherryPy team. Licensed by <a href="http://creativecommons.org/licenses/by/3.0/" rel="license" target="_blank">Creative Commons</a>. <br />Site development and cherry icon by <a href="http://rolando.pe/" target="_blank">Rolando Murillo</a>.</p>
+    </footer>
+  </body>
+</html>
