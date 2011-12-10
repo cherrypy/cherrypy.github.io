@@ -97,7 +97,7 @@ h1, h2, h3, h4 {
   margin-bottom: 5px;
   color: #000;
 }
-h1, h2, h3, h4, nav.site {
+h1, h2, h3, h4, nav.site, a.button {
   font-size: 14px;
   font-family: 'Convergence', sans-serif;
   text-transform: uppercase;
@@ -105,6 +105,9 @@ h1, h2, h3, h4, nav.site {
 h1.site, h2.site {
   margin-bottom: 0;
   text-transform: none;
+}
+hgroup.fix-o {
+  margin-bottom: 10px;
 }
 pre {
   padding: 15px 20px;
@@ -139,35 +142,17 @@ nav.site {
 nav.site li {
   float: left;
 }
-nav.site a {
+nav.site a, a.button {
   display: block;
   height: 25px;
   line-height: 26px;
-  margin-left: 10px;
   padding: 0 10px;
+}
+nav.site a {
+  margin-left: 10px;
 }
 nav.site li:last-child a {
   padding-right: 0;
-}
-a.button {
-  color: #fff;
-  background-color: #c62020;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#c62020), to(#ae0000));
-  background-image: -webkit-linear-gradient(top, #c62020, #ae0000);
-  background-image: -moz-linear-gradient(top, #c62020, #ae0000);
-  background-image: -ms-linear-gradient(top, #c62020, #ae0000);
-  background-image: linear-gradient(top, #c62020, #ae0000);
-}
-a.button:hover {
-  text-decoration: none;
-}
-a.button:active {
-  background-color: #ae0000;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ae0000), to(#c62020));
-  background-image: -webkit-linear-gradient(top, #ae0000, #c62020);
-  background-image: -moz-linear-gradient(top, #ae0000, #c62020);
-  background-image: -ms-linear-gradient(top, #ae0000, #c62020);
-  background-image: linear-gradient(top, #ae0000, #c62020);
 }
 footer.site {
   padding: 15px 0 20px;
@@ -209,3 +194,8 @@ section.site {
 }
 
 .pln{color:#000}.str{color:#d34d30}.kwd{color:#2068c1}.com{color:#800}.typ{color:#800000}.lit{color:#066}.pun,.opn,.clo{color:#999}.tag{color:#008}.atn{color:#606}.atv{color:#080}.dec,.var{color:#606}.fun{color:red}
+
+div.page {
+  float: right;
+  width: 692px;
+}
