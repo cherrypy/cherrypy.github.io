@@ -69,15 +69,10 @@ table {
   overflow: hidden; 
   background: no-repeat;
 }
-.fix-o {
-  overflow: auto;
-}
 
 /* Project CSS
 ////////////// */
 body {
-  width: 850px;
-  margin: 30px auto 0;
   font: 16px/1.5 'Fjord One', sans-serif;
   color: #444;
   background: #eee url('../images/body.png') center top;
@@ -122,35 +117,6 @@ mark {
   color: #666;
   background: #ddd;
 }
-.half {
-  -moz-column-count: 2;
-  -moz-column-gap: 30px;
-  -webkit-column-count: 2;
-  -webkit-column-gap: 30px;
-  column-count: 2;
-  column-gap: 30px;
-}
-header.site {
-  position: relative;
-  margin: 110px 0 30px;
-}
-nav.site {
-  position: absolute;
-  top: -45px;
-  right: 0;
-}
-nav.site li {
-  float: left;
-}
-nav.site a, a.button {
-  display: block;
-  height: 25px;
-  line-height: 26px;
-  padding: 0 10px;
-}
-nav.site a {
-  margin-left: 10px;
-}
 nav.site li:last-child a {
   padding-right: 0;
 }
@@ -166,13 +132,6 @@ footer.site a {
 footer.site a:hover {
   text-decoration: none;
   border-color: #666;
-}
-footer.site p {
-  margin-left: 160px;
-}
-img.site {
-  float: left;
-  margin: 15px 30px 0 0;
 }
 h1.site {
   font-size: 72px;
@@ -194,8 +153,84 @@ section.site {
 }
 
 .pln{color:#000}.str{color:#d34d30}.kwd{color:#2068c1}.com{color:#800}.typ{color:#800000}.lit{color:#066}.pun,.opn,.clo{color:#999}.tag{color:#008}.atn{color:#606}.atv{color:#080}.dec,.var{color:#606}.fun{color:red}
-
-div.page {
-  float: right;
-  width: 692px;
+@media screen and (max-width: 599px) {
+  body {
+    padding: 30px 20px 0;
+  }
+  img.site {
+    float: right;
+    display: block;
+    width: 75px;
+  }
+  h1.site, h2.site {
+  }
+  h1.site {
+    font-size: 250%;
+  }
+  h2.site {
+    font-size: 100%;
+  }
+  nav.site {
+    margin-bottom: 30px;
+  }
+  nav.site, nav.site a {
+    border: dashed #ddd;
+    border-width: 1px 0 0;
+  }
+  nav.site a {
+    display: block;
+    border-width: 0 0 1px;
+    padding: 5px 0;
+  }
+  pre {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 600px) {
+  body {
+    width: 850px;
+    margin: 30px auto 0;
+  }
+  .half {
+    -moz-column-count: 2;
+    -moz-column-gap: 30px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 30px;
+    column-count: 2;
+    column-gap: 30px;
+  }
+  header.site {
+    position: relative;
+    margin: 110px 0 30px;
+  }
+  nav.site {
+    position: absolute;
+    top: -45px;
+    right: 0;
+  }
+  nav.site li {
+    float: left;
+  }
+  nav.site a, a.button {
+    display: block;
+    height: 25px;
+    line-height: 26px;
+    padding: 0 10px;
+  }
+  nav.site a {
+    margin-left: 10px;
+  }
+  img.site {
+    float: left;
+    margin: 15px 30px 0 0;
+  }
+  footer.site p {
+    margin-left: 160px;
+  }
+  footer.site span.switch {
+    display: block;
+  }
+  .fix-o {
+    overflow: auto;
+  }
 }
