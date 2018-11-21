@@ -190,6 +190,11 @@ section.site {
   color: red
 }
 
+/* Decorators */
+.decorator.pun, .decorator.lit {
+  font-weight: bolder;
+}
+
 /* Responsiveness */
 @media screen and (max-width: 599px) {
   body {
