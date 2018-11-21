@@ -39,9 +39,9 @@
 <pre class="prettyprint" id="python"><span class="kwd">import</span><span class="pln"> cherrypy
 	  
 </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">HelloWorld</span><span class="pun">(</span><span class="kwd">object</span><span class="pun">):</span><span class="pln">
+    </span><span class="pun">@</span><span class="lit">index</span><span class="pun">.</span><span class="lit">expose</span><span class="pln">
     </span><span class="kwd">def</span><span class="pln"> index</span><span class="pun">(</span><span class="kwd">self</span><span class="pun">):</span><span class="pln">
         </span><span class="kwd">return</span><span class="pln"> </span><span class="str">"Hello World!"</span><span class="pln">
-    index</span><span class="pun">.</span><span class="pln">exposed </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">True</span><span class="pln">
 
 cherrypy</span><span class="pun">.</span><span class="pln">quickstart</span><span class="pun">(</span><span class="typ">HelloWorld</span><span class="pun">())</span><span class="pln"></span></pre>
       </section>
