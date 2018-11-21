@@ -152,7 +152,45 @@ section.site {
   border-top: 2px solid #ddd;
 }
 
-.pln{color:#000}.str{color:#d34d30}.kwd{color:#2068c1}.com{color:#800}.typ{color:#800000}.lit{color:#066}.pun,.opn,.clo{color:#999}.tag{color:#008}.atn{color:#606}.atv{color:#080}.dec,.var{color:#606}.fun{color:red}
+/* Source code highlighting from `google/code-prettify` */
+.pln {
+  color: #000
+}
+.str {  /* string content */
+  color: #d34d30
+}
+.kwd {  /* a keyword */
+  color:#2068c1
+}
+.com {  /* a comment */
+  color: #800
+}
+.typ {  /* a type name */
+  color: #800000
+}
+.lit {  /* a literal value */
+  color: #066
+}
+.pun, .opn, .clo {  /* punctuation, lisp open bracket, lisp close bracket */
+  color: #999
+}
+.tag {  /* a markup tag name */
+  color: #008
+}
+.atn {  /* a markup attribute name */
+  color: #606
+}
+.atv {  /* a markup attribute value */
+  color: #080
+}
+.dec, .var {  /* a declaration; a variable name */
+  color: #606
+}
+.fun {  /* a function name */
+  color: red
+}
+
+/* Responsiveness */
 @media screen and (max-width: 599px) {
   body {
     padding: 30px 20px 0;
