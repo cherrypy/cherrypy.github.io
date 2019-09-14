@@ -20,6 +20,10 @@
 }
 
 a.tidelift-link:active {
-  position: absolute;
-  top: 0px;
+	position: absolute;
+	top: 0px;
+}
+
+.tidelift-highlight {
+	text-transform: uppercase;
 }
