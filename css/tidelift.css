@@ -1,0 +1,25 @@
+.tidelift-link {
+	border-radius: 18px;
+	background-color: #626980;
+	box-sizing: border-box;
+	color: white;
+	display: flex;
+	top: 0px;
+	right: 0px;
+	position: absolute;
+	background-image: url('https://cdn2.hubspot.net/hubfs/4008838/website/logos/logos_for_download/Tidelift_shorthand-logo_for-dark.png');
+	background-repeat: no-repeat;
+	background-position: 10px;
+	background-size: 12px;
+	padding: 6px 12px 6px 28px;
+	text-decoration: none;
+}
+
+.tidelift-link:hover, .tidelift-link-inline:hover {
+	color: white;
+}
+
+a.tidelift-link:active {
+  position: absolute;
+  top: 0px;
+}
